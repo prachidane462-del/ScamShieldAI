@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-primary: #0B1020;
+    --panel-primary: #111A2E;
+    --card-primary: #16223B;
+    --border-primary: #1E2C4A;
+    --text-primary: #F8FAFC;
+    --text-muted: #94A3B8;
+  }
+
+  .light {
+    --bg-primary: #F8FAFC;
+    --panel-primary: #FFFFFF;
+    --card-primary: #F1F5F9;
+    --border-primary: #E2E8F0;
+    --text-primary: #0F172A;
+    --text-muted: #64748B;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(11, 16, 32, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2C4A;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2E3F66;
+}
+
+/* Cyber grid background effect */
+.cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(34, 211, 238, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 211, 238, 0.04) 1px, transparent 1px);
+}
